@@ -876,6 +876,7 @@
 
   .wrapper.active .form-box.login .animation{
     transform: translateX(-120%);
+    transition-delay: calc(0.1s * var(--i)) ;
   }
 
 
@@ -884,8 +885,16 @@
     transform: translateX(0);
   }
 
-  
+  .wrapper .info-text.login .animation {
+    transform: translateX(0);
+    transition: 0.7s ease;
+  }
 
+  .wrapper.active .info-text.login .animation{
+    transform: translateX(140%);
+    transition-delay: calc(0.1s * var(--i));
+  }
+  
 
   
   /*-----------------------------------*\
